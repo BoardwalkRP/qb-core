@@ -1,6 +1,17 @@
 QBShared = QBShared or {}
 QBShared.Weapons = {
 	-- // WEAPONS
+	-- ADDON
+	[`weapon_luger`]                 = { name = 'weapon_luger', label = 'Luger P08', weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_m1911`]                 = { name = 'weapon_m1911', label = 'Colt M1911', weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_swm15`]                 = { name = 'weapon_swm15', label = 'S&W Model 15', weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_swm15sn`]               = { name = 'weapon_swm15sn', label = 'S&W Model 15 Snub Nose', weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_mg42`]                  = { name = 'weapon_mg42', label = 'MG-42', weapontype = 'Light Machine Gun', ammotype = 'AMMO_SMG', damagereason = 'Machine gunned / Sprayed / Ruined' },
+	[`weapon_spring`]                = { name = 'weapon_spring', label = 'Springfield Rifle', weapontype = 'Sniper Rifle', ammotype = 'AMMO_SNIPER', damagereason = 'Sniped / Picked off / Scoped' },
+	[`weapon_mp40`]                  = { name = 'weapon_mp40', label = 'MP-40', weapontype = 'Submachine Gun', ammotype = 'AMMO_SMG', damagereason = 'Riddled / Drilled / Finished / Submachine Gunned' },
+	[`weapon_m16`]                   = { name = 'weapon_m16', label = 'M16 Rifle', weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_ar10`]                  = { name = 'weapon_ar10', label = 'AR-10 Rifle', weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+
 	-- Melee
 	[`weapon_unarmed`]               = { name = 'weapon_unarmed', label = 'Fists', weapontype = 'Melee', ammotype = nil, damagereason = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered' },
 	[`weapon_dagger`]                = { name = 'weapon_dagger', label = 'Dagger', weapontype = 'Melee', ammotype = nil, damagereason = 'Knifed / Stabbed / Eviscerated' },
