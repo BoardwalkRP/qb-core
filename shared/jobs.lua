@@ -19,37 +19,37 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-                name = 'Officer',
-                payment = 15
-            },
+				name = 'Officer',
+				payment = 15
+			},
 			['1'] = {
-                name = 'Senior Officer',
-                payment = 20
-            },
+				name = 'Senior Officer',
+				payment = 20
+			},
 			['2'] = {
-                name = 'Corporal',
-                payment = 25
-            },
+				name = 'Corporal',
+				payment = 25
+			},
 			['3'] = {
-                name = 'Sergeant',
+				name = 'Sergeant',
 				isboss = true,
-                payment = 30
-            },
-            ['4'] = {
-                name = 'Lieutenant',
-                isboss = true,
-                payment = 35
-            },
-            ['5'] = {
-                name = 'Captain',
-                isboss = true,
-                payment = 40
-            },
-            ['6'] = {
-                name = 'Chief',
-                isboss = true,
-                payment = 45
-            },
+				payment = 30
+			},
+			['4'] = {
+				name = 'Lieutenant',
+				isboss = true,
+				payment = 35
+			},
+			['5'] = {
+				name = 'Captain',
+				isboss = true,
+				payment = 40
+			},
+			['6'] = {
+				name = 'Chief',
+				isboss = true,
+				payment = 45
+			},
 		},
 	},
 	ambulance = {
@@ -59,38 +59,38 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-                name = 'Paramedic Cadet',
-                payment = 20
-            },
+				name = 'Paramedic Cadet',
+				payment = 20
+			},
 			['1'] = {
-                name = 'EMT',
-                payment = 30
-            },
+				name = 'EMT',
+				payment = 30
+			},
 			['2'] = {
-                name = 'Teamleader EMT',
-                payment = 40
-            },
+				name = 'Teamleader EMT',
+				payment = 40
+			},
 			['3'] = {
-                name = 'Doctor',
-                payment = 50
-            },
+				name = 'Doctor',
+				payment = 50
+			},
 			['4'] = {
-                name = 'Specialist Doctor',
-                payment = 60
-            },
-            ['5'] = {
-                name = 'Surgeon',
-                payment = 70
-            },
-            ['6'] = {
-                name = 'Specialist Surgeon',
-                payment = 80
-            },
-            ['7'] = {
-                name = 'Dean Of Hospital',
-                isboss = true,
-                payment = 90
-            },
+				name = 'Specialist Doctor',
+				payment = 60
+			},
+			['5'] = {
+				name = 'Surgeon',
+				payment = 70
+			},
+			['6'] = {
+				name = 'Specialist Surgeon',
+				payment = 80
+			},
+			['7'] = {
+				name = 'Dean Of Hospital',
+				isboss = true,
+				payment = 90
+			},
 		},
 	},
 	realestate = {
@@ -136,9 +136,9 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-                name = 'Average Mechanic',
-                payment = 15
-            },
+				name = 'Average Mechanic',
+				payment = 15
+			},
 		},
 	},
 	mechanic2 = {
