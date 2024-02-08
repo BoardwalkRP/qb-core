@@ -180,7 +180,6 @@ end
 function QBCore.Functions.SetPlayerBucket(source, bucket)
     if source and bucket then
         local plicense = QBCore.Functions.GetIdentifier(source, 'license')
-        Player(source).state:set('instance', bucket, true)
         SetPlayerRoutingBucket(source, bucket)
         QBCore.Player_Buckets[plicense] = { id = source, bucket = bucket }
         return true
@@ -309,26 +308,24 @@ function PaycheckInterval()
     if next(QBCore.Players) then
         for _, Player in pairs(QBCore.Players) do
             if Player then
-                local payment = QBShared.Jobs[Player.PlayerData.job.name]['grades'][tostring(Player.PlayerData.job.grade.level)].payment
-                if not payment then payment = Player.PlayerData.job.payment end
+                local payment = Player.PlayerData.job.payment
+                local citizenid = Player.PlayerData.citizenid
+
                 if Player.PlayerData.job and payment > 0 and (QBShared.Jobs[Player.PlayerData.job.name].offDutyPay or Player.PlayerData.job.onduty) then
                     if QBCore.Config.Money.PayCheckSociety then
-                        local account = exports['qb-banking']:GetAccountBalance(Player.PlayerData.job.name)
-                        if account ~= 0 then          -- Checks if player is employed by a society
+                        local account = exports['qb-management']:GetAccount(Player.PlayerData.job.name)
+                        if account ~= 0 then -- Checks if player is employed by a society
                             if account < payment then -- Checks if company has enough money to pay society
                                 TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('error.company_too_poor'), 'error')
                             else
-                                Player.Functions.AddMoney('bank', payment, 'paycheck')
-                                exports['qb-banking']:RemoveMoney(Player.PlayerData.job.name, payment, 'Employee Paycheck')
-                                TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', { value = payment }))
+                                TriggerEvent('keep-paycheck:server:AddMoneyToPayCheck', citizenid,payment,Player.PlayerData.job.name)
+                                exports['qb-management']:RemoveMoney(Player.PlayerData.job.name, payment)
                             end
                         else
-                            Player.Functions.AddMoney('bank', payment, 'paycheck')
-                            TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', { value = payment }))
+                            TriggerEvent('keep-paycheck:server:AddMoneyToPayCheck', citizenid,payment,Player.PlayerData.job.name)
                         end
                     else
-                        Player.Functions.AddMoney('bank', payment, 'paycheck')
-                        TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', { value = payment }))
+                        TriggerEvent('keep-paycheck:server:AddMoneyToPayCheck', citizenid,payment,Player.PlayerData.job.name)
                     end
                 end
             end
