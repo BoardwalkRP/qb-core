@@ -1,6 +1,7 @@
 local jobs = {
     momsdonuts = {
         label = 'Moms Donuts',
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -447,6 +448,7 @@ local jobs = {
     },
     pops = {
         label = "Pops Diner Employee",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -468,6 +470,7 @@ local jobs = {
     },
     caseys = {
         label = "Caseys Diner Employee",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -489,6 +492,7 @@ local jobs = {
     },
     innout = {
         label = "In-N-Out Employee",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -510,6 +514,7 @@ local jobs = {
     },
     yellowjack = {
         label = "Yellow Jack Employee",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -530,6 +535,7 @@ local jobs = {
     },
     blackwoods = {
         label = "Black Woods Saloon Employee",
+        type = 'restaurant',
         defaultDuty = true,
         grades = {
             ['0'] = {
@@ -549,6 +555,7 @@ local jobs = {
     },
     pizza = {
         label = "Venetian Pizza",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -569,6 +576,7 @@ local jobs = {
     },
     coolbeans = {
         label = "Cool Beans",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -598,6 +606,7 @@ local jobs = {
     },
     conundrum = {
         label = "Travellers Tavern Staff",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -663,6 +672,7 @@ local jobs = {
     },
     sals = {
         label = "Saliari's Staff",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -725,6 +735,7 @@ local jobs = {
     },
     pizzathis = {
         label = "Pizza This Staff",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
@@ -754,6 +765,7 @@ local jobs = {
     },
     arriba = {
         label = "Arriba Mexican Restaurant Staff",
+        type = 'restaurant',
         defaultDuty = true,
         offDutyPay = false,
         grades = {
