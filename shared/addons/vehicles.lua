@@ -3384,7 +3384,7 @@ QBShared.Vehicles = {
         hash = `cid_admiral`,
         shop = 'admin',
     },
-    do = {
+    ['do'] = {
         name = 'do',
         brand = 'Emergency',
         model = 'do',
