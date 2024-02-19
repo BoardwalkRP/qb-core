@@ -101,6 +101,19 @@ local items = {
     burrito              = { name = 'burrito', label = 'Currito', weight = 100, type = 'item', image = 'burrito.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Mmmm... big taco wrap' },
     mex_chicken          = { name = 'mex_chicken', label = 'Mexican Chicken', weight = 100, type = 'item', image = 'chicken.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A whole chicken, roasted Mexican style' },
 
+    --Burger Shot
+    bs_moneyshotmeal     = { name = 'bs_moneyshotmeal', label = 'Money Shot Meal', weight = 100, type = 'item', image = 'bs_moneyshotmeal.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_bleedermeal       = { name = 'bs_bleedermeal', label = 'Bleeder Meal', weight = 100, type = 'item', image = 'bs_bleedermeal.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_torpedomeal       = { name = 'bs_torpedomeal', label = 'Torpedo Meal', weight = 100, type = 'item', image = 'bs_torpedomeal.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_meatfreemeal      = { name = 'bs_meatfreemeal', label = 'Meat Free Meal', weight = 100, type = 'item', image = 'bs_meatfreemeal.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_heartstopper      = { name = 'bs_heartstopper', label = 'Heart Stopper 6lb Burger Meal', weight = 100, type = 'item', image = 'bs_heartstopper.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Will I Survive?' },
+    bs_cola              = { name = 'bs_cola', label = 'Cola', weight = 100, type = 'item', image = 'bs_cola.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_coffee            = { name = 'bs_coffee', label = 'Coffee', weight = 100, type = 'item', image = 'bs_coffee.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_fries             = { name = 'bs_fries', label = 'Fries', weight = 100, type = 'item', image = 'bs_fries.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_onionrings        = { name = 'bs_onionrings', label = 'Onion Rings', weight = 100, type = 'item', image = 'bs_onionrings.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_nuggets           = { name = 'bs_nuggets', label = 'Nuggets', weight = 100, type = 'item', image = 'bs_nuggets.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+    bs_toy               = { name = 'bs_toy', label = 'Burger Shot I Survived', weight = 100, type = 'item', image = 'bs_toy.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'I Survived' },
+
     -- Drinks
     water_stolen         = { name = 'water_stolen', label = 'Stolen Water', weight = 500, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty criminals out there' },
     kurkastolen          = { name = 'kurkastolen', label = 'Stolen Cola', weight = 500, type = 'item', image = 'cola.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty criminals out there' },
