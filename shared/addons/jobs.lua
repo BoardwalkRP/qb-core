@@ -818,6 +818,32 @@ local jobs = {
             },
         },
     },
+    burgershot = {
+        label = "Burgershot Staff",
+        type = 'restaurant',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            ['0'] = {
+                name = "Burger Flipper",
+                payment = 15
+            },
+            ['1'] = {
+                name = "Assistant Manager",
+                payment = 20
+            },
+            ['2'] = {
+                name = "Manager",
+                isboss = true,
+                payment = 25
+            },
+            ['3'] = {
+                name = "Owner",
+                isboss = true,
+                payment = 35
+            },
+        },
+    },
 }
 
 for job, data in pairs(jobs) do QBShared.Jobs[job] = data end
