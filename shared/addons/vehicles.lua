@@ -715,6 +715,16 @@ QBShared.Vehicles = {
         hash = `stalion`,
         shop = 'pdm',
     },
+    stalion2 = {
+        name = 'Stallion Racer',
+        brand = 'Declasse',
+        model = 'stalion2',
+        price = 53000,
+        category = 'muscle',
+        categoryLabel = 'Muscle',
+        hash = `stalion2`,
+        shop = 'NONE',
+    },
     impaler = {
         name = 'Impaler',
         brand = 'Declasse',
