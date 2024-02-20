@@ -604,7 +604,7 @@ local jobs = {
             },
         },
     },
-    conundrum = {
+    travellerstavern = {
         label = "Travellers Tavern Staff",
         type = 'restaurant',
         defaultDuty = true,
