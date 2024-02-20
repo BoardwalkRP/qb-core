@@ -20,6 +20,7 @@ local items = {
     cwnote               = { name = "cwnote", label = "Note", weight = 35, type = "item", image = "stickynote.png", unique = true, useable = true, shouldClose = false, combinable = nil, description = "A note" },
     propane_small        = { name = 'propane_small', label = 'Canister of Propane', weight = 1000, type = 'item', image = 'propane_small.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A small canister of propane. Used with certain tools.' },
     propane_large        = { name = 'propane_large', label = 'Propane Tank', weight = 5000, type = 'item', image = 'propane_large.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A large tank of propane, usually used with BBQs and stoves.' },
+    lspdbadge            = { name = "lspdbadge",  label = "Police Badge", weight = 100,  type = "item", image = "lspdbadge.png", unique = false, useable = true, shouldClose = true, combinable = nil, description = "LSPD Badge"},
 
     -- Food
     donut                = { name = 'donut', label = 'Glazed Donut', weight = 100, type = 'item', image = 'donut.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Donut' },                                    -- Added to Jim Consumables
