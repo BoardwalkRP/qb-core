@@ -21,6 +21,9 @@ local items = {
     propane_small        = { name = 'propane_small', label = 'Canister of Propane', weight = 1000, type = 'item', image = 'propane_small.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A small canister of propane. Used with certain tools.' },
     propane_large        = { name = 'propane_large', label = 'Propane Tank', weight = 5000, type = 'item', image = 'propane_large.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A large tank of propane, usually used with BBQs and stoves.' },
     lspdbadge            = { name = "lspdbadge",  label = "Police Badge", weight = 100,  type = "item", image = "lspdbadge.png", unique = false, useable = true, shouldClose = true, combinable = nil, description = "LSPD Badge"},
+    camera               = { name = 'camera', label = 'Camera', weight = 1000, type = 'item', image = 'camera.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Camera to take pretty pictures.'},
+	photo                = { name = 'photo', label = 'Saved Pic', weight = 500, type = 'item', image = 'photo.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Brand new picture saved!'},
+
 
     -- Food
     donut                = { name = 'donut', label = 'Glazed Donut', weight = 100, type = 'item', image = 'donut.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A Donut' },                                    -- Added to Jim Consumables
